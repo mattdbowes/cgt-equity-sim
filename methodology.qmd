@@ -1,0 +1,170 @@
+---
+title: "CGT reform Monte Carlo: methodology"
+date: today
+format:
+  html:
+    toc: true
+    code-fold: true
+  pdf:
+    toc: true
+---
+
+## Disclaimer
+
+This document and the underlying simulation were produced in a personal
+capacity. They are not affiliated with, endorsed by, or representative
+of the views of any employer or other organisation. Nothing here
+constitutes tax, legal, or financial advice.
+
+## Objective
+
+Estimate the distributional and revenue impact of the capital gains tax
+reform proposed in the 2026 Australian Federal Budget — replacing the
+50% CGT discount with CPI indexation of the cost base, subject to a 30%
+minimum effective tax rate — on representative retail share portfolios
+drawn from the S&P/ASX 200.
+
+The simulation entry years are 2009, 2015, and 2020, each matched to an
+S&P/ASX 200 constituent snapshot dated 2009-02-27, 2014-09-08 and
+2020-01-25 respectively. Using a contemporary index list rather than
+today's would re-introduce survivorship bias and is not done here.
+
+## Headline assumptions
+
+All free parameters are revisited in `analysis/sensitivity.R`.
+
+* **Marginal tax rate.** Every simulated investor faces a 30% marginal
+  tax rate. The 30% minimum-tax floor in the reformed regime is therefore
+  non-binding by construction, so the reform is modelled as a pure
+  50%-discount → CPI-indexation switch.
+* **Asset universe.** Listed Australian equities only. No property,
+  managed funds, or offshore holdings.
+* **Eligible tickers.** Each entry year draws from its corresponding
+  S&P/ASX 200 constituent snapshot.
+* **Portfolio composition.** Ten holdings per portfolio. Tickers are
+  drawn from the entry-year constituent list with probability
+  proportional to market capitalisation at the snapshot date. The 2014
+  caps are derived as share price × shares on issue; the 2009 and 2020
+  caps are taken directly from the source.
+* **Portfolio size.** Drawn from a log-normal distribution with median
+  $15,000 and `sdlog = 1.1`. Allocation across holdings is equal-weight.
+* **Holding period.** Drawn from a Weibull survival distribution
+  (`shape = 1.2`, `scale = 5` years) and modulated by:
+  * a **disposition effect** for the first 12 month-steps after
+    purchase: the monthly sale hazard is multiplied by
+    `disposition_ratio` (default 2.0) for positions currently in
+    unrealised gain, and divided by `disposition_ratio` for positions
+    currently in unrealised loss.
+  * a **tax-loss-selling spike** in June: the monthly hazard for any
+    holding currently in unrealised loss is multiplied by
+    `june_loss_multiplier` (default 3.0).
+* **Delistings and takeovers.** Constituents that were delisted, taken
+  over, or otherwise removed from Yahoo's free price history are
+  represented by a synthetic monthly price series linearly interpolated
+  between a verified entry price (snapshot date) and a verified
+  terminal price (deal close or last-trade date). Bankruptcies that
+  wiped out shareholders use a terminal price of effectively zero. The
+  mapping is held in `data-raw/takeover_map.csv` and is documented row
+  by row.
+* **Renames with continuous price history.** Where Yahoo migrated the
+  full historical series to a successor ticker after a corporate
+  rename, the successor's data is re-keyed to the original constituent
+  ticker via `data-raw/successor_map.csv`. This avoids both a synthetic
+  series and a survivorship bias against renamed entities.
+
+## Time resolution
+
+The simulation steps monthly. The price panel is downsampled to the
+last trading day of each month before the engine sees it. The time
+step is a fixed model choice and is not varied in the sensitivity grid.
+
+## Data inputs
+
+| Input | Source | Script |
+|---|---|---|
+| Daily prices (downsampled to monthly) | `tidyquant::tq_get` with `.AX` suffix | `data-raw/01_price_panel.R` |
+| Yahoo name-based recovery for failed direct fetches | Yahoo Finance search endpoint | `data-raw/01b_recover_yahoo.R` |
+| Continuous-history renames | Hand-curated `successor_map.csv` | `data-raw/01c_manual_recovery.R` |
+| Synthetic series for delisted constituents | Hand-curated `takeover_map.csv` | `data-raw/01d_takeover_synth.R` |
+| Historical ASX 200 constituents | Index rebalance records, reconstructed manually | `data-raw/02_asx200_constituents.R` |
+| Quarterly CPI (interpolated to monthly) | ABS series A2325846C via `readabs` | `data-raw/03_cpi.R` |
+
+## Tax calculation
+
+For each portfolio at the end of its simulation window:
+
+### Current regime
+
+For each holding:
+
+* Compute nominal gain = sale proceeds − cost base.
+* Net short-term losses against short-term gains; remaining losses
+  offset long-term gains before the discount.
+* The 50% CGT discount applies to the net long-term gain after
+  offsets.
+* Tax = 30% × (net short-term gain + 0.5 × net long-term gain),
+  floored at zero.
+
+### Reformed regime
+
+For each holding:
+
+* Compute the CPI indexation factor = CPI(sale month) / CPI(purchase
+  month), with monthly CPI linearly interpolated from the quarterly
+  ABS series.
+* Indexed cost base = nominal cost base × indexation factor.
+* If the position has a positive nominal gain, real gain = max(0, sale
+  − indexed cost base) — indexation cannot create or increase a
+  capital loss. If the position has a negative nominal gain, real
+  gain = nominal gain (indexation does not apply).
+* Net short-term losses against short-term gains; remaining losses
+  offset long-term real gains.
+* Tax = 30% × (net short-term gain + net long-term real gain),
+  floored at zero.
+
+## Outputs
+
+`analysis/run_simulation.R` writes:
+
+* `outputs/sim_results.parquet` — one row per (entry_year, sim_id)
+  with portfolio value, nominal gain, real gain, tax under each
+  regime, and the tax change.
+* `outputs/holding_results.parquet` — one row per
+  (entry_year, sim_id, holding_id) for diagnostics.
+
+## Sensitivity
+
+`analysis/sensitivity.R` reruns the simulation at every combination of:
+
+* `disposition_ratio` ∈ {1.0, 1.5, 2.0, 2.5}
+* `weibull_scale_years` ∈ {3, 5, 7}
+* `portfolio_median` ∈ {10000, 15000, 25000}
+
+at 2,000 sims per cell, and writes
+`outputs/sensitivity_results.parquet` with mean and median tax change,
+share better-off and share worse-off.
+
+## Reproducibility
+
+* All randomness flows through a single seed (default `20260521L`),
+  with each entry-year cohort seeded as `base_seed + entry_year`.
+* `renv` pins package versions; run `renv::restore()` after cloning.
+* The canonical deliverables are the four PNGs in `figures/` and the
+  sensitivity table in `outputs/sensitivity_results.parquet`.
+
+## Known limitations
+
+* **Synthetic series have no intra-period volatility.** Linearly
+  interpolated price paths between entry and terminal prices remove all
+  month-to-month variance for the affected holdings. The disposition
+  effect cannot trigger on a smooth path, so realised holding periods
+  for these tickers are biased upward and the loss-tail mass is
+  understated.
+* **Constituent snapshots are not fully continuous.** Each entry-year
+  cohort uses a single index snapshot; intra-year additions, removals,
+  and weight changes are ignored.
+* **No personal-circumstance heterogeneity.** A single 30% marginal
+  rate is applied universally. The reformed regime's 30% minimum tax
+  is non-binding under this assumption; modelling its bite requires
+  layering investor-level income distributions on top of the portfolio
+  simulator.

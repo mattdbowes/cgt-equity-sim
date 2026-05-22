@@ -1,0 +1,29 @@
+Package: cgt.equity.sim
+Title: Monte Carlo Simulation of the 2026 Budget CGT Reform
+Version: 0.1.0
+Authors@R:
+    person("Matt", "Bowes", role = c("aut", "cre"),
+           email = "mattbowes96@gmail.com")
+Description: Simulates representative retail share portfolios drawn from
+    the S&P/ASX 200 in 2009, 2015, and 2020 to estimate the distributional
+    and revenue impact of replacing the 50% CGT discount with CPI
+    indexation plus a 30% minimum tax. Not a package in the usual sense;
+    the DESCRIPTION enables devtools::load_all() during development.
+Encoding: UTF-8
+Imports:
+    arrow,
+    dplyr,
+    furrr,
+    future,
+    ggplot2,
+    lubridate,
+    purrr,
+    readr,
+    readabs,
+    tibble,
+    tidyquant,
+    tidyr
+Suggests:
+    knitr,
+    quarto,
+    testthat

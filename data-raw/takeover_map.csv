@@ -1,0 +1,49 @@
+orig_ticker,entry_price,exit_date,exit_price,confidence,note
+DJS,2.35,2014-07-31,4.00,verified,Woolworths SA cash $4.00 (Wikipedia)
+WTF,4.85,2014-11-15,3.20,computed,Expedia A$703M / ~220M shares; matches public reporting
+TOL,5.39,2015-05-28,9.04,memory,Japan Post cash takeover offer
+LNN,8.65,2009-10-21,12.22,memory,Kirin cash takeover offer
+FGL,5.59,2011-12-16,5.40,memory,SABMiller cash + small special div; pre-TWE demerger so entity continuity broken
+AXA,3.24,2011-03-31,6.43,memory,AMP cash + AMP scrip blended value
+LGL,3.36,2010-08-30,4.11,computed,Newcrest A$9.5B / ~2.31B shares (Wikipedia verified date+total)
+NCM,31.11,2023-11-06,25.00,memory,Newmont scrip + USD special dividend approx AUD value
+OZL,11.46,2023-04-26,28.25,memory,BHP cash offer
+CSR,1.46,2024-09-30,9.24,computed,Saint-Gobain A$4.5B / ~487M shares
+AOE,2.67,2010-08-23,4.70,memory,Shell/PetroChina cash offer
+GFF,1.14,2015-03-15,0.675,memory,Wilmar/First Pacific cash offer
+HSP,4.22,2019-06-06,2.50,memory,Brookfield cash offer
+LEI,19.02,2022-05-06,22.00,memory,Hochtief minority squeeze-out
+TTS,2.86,2017-12-22,4.30,memory,Tabcorp scrip+cash; 0.80 TAH + $0.425 cash at TAH ~$4.85
+OSH,5.02,2021-12-14,3.95,memory,Santos scrip 0.6275 STO/OSH at STO ~$6.30
+OST,1.82,2016-04-07,0.00,verified,Arrium voluntary administration April 2016, no shareholder payout
+BNB,0.33,2009-03-13,0.00,verified,Babcock & Brown Limited parent voluntary administration March 2009, equity wiped
+BBP,0.04,2009-04-22,0.00,verified,Babcock & Brown Power administration April 2009, equity wiped
+GNS,0.75,2012-09-28,0.00,verified,Gunns Limited voluntary administration September 2012, equity wiped
+MMX,0.55,2014-01-15,0.00,memory,Murchison Metals winding up 2014, no shareholder return
+KZL,0.36,2012-04-30,0.00,verified,Kagara Zinc administration April 2012, equity wiped
+VBA,0.24,2020-04-21,0.00,verified,Virgin Australia (renamed from Virgin Blue) administration April 2020, equity wiped
+TEN,0.80,2017-06-14,0.00,verified,Ten Network Holdings receivership June 2017, equity wiped (CBS later bought debt)
+BBI,0.07,2009-12-04,3.98,user,user-supplied delisting price
+CER,0.04,2017-09-26,0.32,user,user-supplied final price (Centro Retail post-restructure)
+VPG,0.04,2011-08-31,1.79,user,user-supplied final price (Valad Property Group)
+AWB,0.94,2010-11-19,1.495,user,user-supplied final price (acquired by Agrium)
+BLD,2.86,2024-07-09,5.83,user,user-supplied delisting price (Boral; SGH minority squeeze-out)
+HIL,1.47,2023-08-30,0.023,user,user-supplied delisting price (Hills Industries; near-total loss)
+IPL,2.16,2025-12-30,2.59,user,user-supplied current price stub (still listed; Yahoo gap)
+PTM,3.13,2025-12-30,0.695,user,user-supplied current price stub (still listed; Yahoo gap)
+ABP,0.26,2025-12-30,1.20,user,user-supplied current price stub (still listed; Yahoo gap)
+GUD,5.28,2025-12-30,10.68,user,user-supplied current price stub (still listed; Yahoo gap)
+SEV,5.67,2009-10-22,6.25,user,user-supplied final price (Seven Network; merged into SWM 2011 but forced exit here so SWM history doesn't leak in)
+WAN,4.73,2010-05-25,6.539,user,user-supplied final price (West Australian Newspapers; merged into SWM 2011)
+APN,1.10,2023-11-30,1.20,user,user-supplied terminal price (APN renamed HT&E 2016; HT&E acquired by ARN Media at $1.20 cash 2023)
+WDC,10.33,2019-07-16,10.84,user,user-supplied terminal price (Westfield Group; post-demerger entity later acquired by Unibail-Rodamco)
+MCC,2.48,2011-12-22,16.010,user,user-supplied delisting price (Macarthur Coal; Peabody acquisition)
+CEY,1.77,2010-10-28,6.16,user,user-supplied delisting price (Centennial Coal; Banpu acquisition)
+SKI,1.08,2021-12-24,2.87,user,user-supplied delisting price (Spark Infrastructure; KKR/OTPP acquisition)
+UGL,7.36,2017-01-04,3.71,user,user-supplied delisting price (UGL Limited; CIMIC acquisition)
+AWC,1.19,2024-08-05,1.450,user,user-supplied delisting price (Alumina; Alcoa scrip implied AUD)
+CPA,0.93,2024-04-23,1.245,user,user-supplied delisting price (Commonwealth Property Office; DEXUS acquisition)
+DUE,1.68,2017-05-18,3.020,user,user-supplied delisting price (DUET Group; CKI acquisition)
+AUN,0.82,2025-12-04,0.105,user,user-supplied delisting price (Austar United Communications)
+ALZ,0.22,2014-11-04,4.460,user,user-supplied delisting price (Australand; Frasers Centrepoint acquisition; entry price per source spreadsheet)
+AIO,0.44,2016-08-26,9.130,user,user-supplied delisting price (Asciano; Brookfield/Qube consortium; entry price per source spreadsheet)

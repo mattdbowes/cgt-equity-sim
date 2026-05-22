@@ -1,0 +1,154 @@
+"orig_ticker","company_name","candidate","status","n_rows"
+"SGT","Singapore Telecommunications Limited",NA,"no_asx_match",0
+"WPL","Woodside Petroleum Limited",NA,"no_asx_match",0
+"WDC","Westfield Group",NA,"no_asx_match",0
+"NCM","Newcrest Mining Limited",NA,"no_asx_match",0
+"FGL","Foster's Group Limited",NA,"no_asx_match",0
+"LGL","Lihir Gold Limited",NA,"no_asx_match",0
+"AGK","Agl Energy Limited","AGL.AX","ok",252
+"OSH","Oil Search Limited",NA,"no_asx_match",0
+"LEI","Leighton Holdings Limited",NA,"no_asx_match",0
+"AXA","Axa Asia Pacific Holdings Limited",NA,"no_asx_match",0
+"LNN","Lion Nathan Limited",NA,"no_asx_match",0
+"CFX","Cfs Retail Property Trust",NA,"no_asx_match",0
+"TTS","Tatts Group Limited",NA,"no_asx_match",0
+"TOL","Toll Holdings Limited",NA,"no_asx_match",0
+"TEL","Telecom Corporation of New Zealand Limited",NA,"no_asx_match",0
+"IPL","Incitec Pivot Limited",NA,"no_asx_match",0
+"CTX","Caltex Australia Limited",NA,"no_asx_match",0
+"AOE","Arrow Energy Limited",NA,"no_asx_match",0
+"PTM","Platinum Asset Management Limited",NA,"no_asx_match",0
+"BLD","Boral Limited",NA,"no_asx_match",0
+"PRY","Primary Health Care Limited",NA,"no_asx_match",0
+"OST","Onesteel Limited",NA,"no_asx_match",0
+"GFF","Goodman Fielder Limited",NA,"no_asx_match",0
+"CPA","Commonwealth Property Office Fund",NA,"no_asx_match",0
+"AWC","Alumina Limited",NA,"no_asx_match",0
+"UGL","United Group Limited",NA,"no_asx_match",0
+"SGX","Sino Gold Mining Limited",NA,"no_asx_match",0
+"SKI","Spark Infrastructure Group",NA,"no_asx_match",0
+"SEV","Seven Network Limited",NA,"no_asx_match",0
+"DJS","David Jones Limited",NA,"no_asx_match",0
+"SIP","Sigma Pharmaceuticals Ltd",NA,"no_asx_match",0
+"AUN","Austar United Communications Limited",NA,"no_asx_match",0
+"DUE","Duet Group",NA,"no_asx_match",0
+"HSP","Healthscope Limited",NA,"no_asx_match",0
+"CSR","CSR Limited",NA,"no_asx_match",0
+"WAN","West Australian Newspapers Holdings Limited",NA,"no_asx_match",0
+"ABC","Adelaide Brighton Limited",NA,"no_asx_match",0
+"AQP","Aquarius Platinum Limited",NA,"no_asx_match",0
+"OZL","OZ Minerals Limited",NA,"no_asx_match",0
+"EQN","Equinox Minerals Limited",NA,"no_asx_match",0
+"BBW","Babcock & Brown Wind Partners Group",NA,"no_asx_match",0
+"TEN","Ten Network Holdings Limited",NA,"no_asx_match",0
+"CAB","Cabcharge Australia Limited",NA,"no_asx_match",0
+"WTF","Wotif.Com Holdings Limited",NA,"no_asx_match",0
+"CEU","Connecteast Group",NA,"no_asx_match",0
+"GWT","Gwa International Limited",NA,"no_asx_match",0
+"AIX","Australian Infrastructure Fund",NA,"no_asx_match",0
+"WSA","Western Areas Nl",NA,"no_asx_match",0
+"CEY","Centennial Coal Company Limited",NA,"no_asx_match",0
+"APN","Apn News & Media Limited",NA,"no_asx_match",0
+"CRG","Crane Group Limited",NA,"no_asx_match",0
+"TPI","Transpacific Industries",NA,"no_asx_match",0
+"MCC","Macarthur Coal Limited",NA,"no_asx_match",0
+"IVC","Invocare Limited",NA,"no_asx_match",0
+"CXP","Corporate Express Australia Limited",NA,"no_asx_match",0
+"MCG","Macquarie Communications Infrastructure Group",NA,"no_asx_match",0
+"AVO","Avoca Resources Limited",NA,"no_asx_match",0
+"SPT","Spotless Group Limited",NA,"no_asx_match",0
+"TSE","Transfield Services Limited",NA,"no_asx_match",0
+"PPX","Paperlinx Limited",NA,"no_asx_match",0
+"GCL","Gloucester Coal Limited",NA,"no_asx_match",0
+"AWB","Awb Limited",NA,"no_asx_match",0
+"GUD","GUD. Holdings Limited",NA,"no_asx_match",0
+"AIO","Asciano Group",NA,"no_asx_match",0
+"HIL","Hills Industries Limited",NA,"no_asx_match",0
+"VBA","Virgin Blue Holdings Ltd",NA,"no_asx_match",0
+"GNS","Gunns Limited",NA,"no_asx_match",0
+"PNA","PanAust Ltd",NA,"no_asx_match",0
+"MOF","Macquarie Office Trust",NA,"no_asx_match",0
+"NXS","Nexus Energy Limited",NA,"no_asx_match",0
+"MMX","Murchison Metals Ltd",NA,"no_asx_match",0
+"ALZ","Australand Property Group",NA,"no_asx_match",0
+"BLY","Boart Longyear Limited",NA,"no_asx_match",0
+"AAX","Ausenco Limited",NA,"no_asx_match",0
+"ABP","Abacus Property Group",NA,"no_asx_match",0
+"MCW","Macquarie Countrywide Trust",NA,"no_asx_match",0
+"MMG","Macquarie Media Group",NA,"no_asx_match",0
+"BKN","Bradken Limited",NA,"no_asx_match",0
+"MCR","Mincor Resources Nl",NA,"no_asx_match",0
+"PBG","Pacific Brands Limited",NA,"no_asx_match",0
+"BJT","Babcock & Brown Japan Property Trust",NA,"no_asx_match",0
+"SDG","Sunland Group Limited",NA,"no_asx_match",0
+"PMP","Pmp Limited",NA,"no_asx_match",0
+"IIF","Ing Industrial Fund",NA,"no_asx_match",0
+"CER","Centro Retail",NA,"no_asx_match",0
+"ALS","Alesco Corporation Limited",NA,"no_asx_match",0
+"BNB","Babcock & Brown Limited",NA,"no_asx_match",0
+"FKP","Fkp Property Group",NA,"no_asx_match",0
+"KZL","Kagara Zinc Limited",NA,"no_asx_match",0
+"VPG","Valad Property Group",NA,"no_asx_match",0
+"BBP","Babcock & Brown Power",NA,"no_asx_match",0
+"MDT","Macquarie Ddr Trust",NA,"no_asx_match",0
+"HFA","HFA Holdings Limited",NA,"no_asx_match",0
+"BBI","Babcock & Brown Infrastructure Group",NA,"no_asx_match",0
+"AAD","Ardent Leisure Group Stapled",NA,"no_asx_match",0
+"AOG","Aveo Group Stapled",NA,"no_asx_match",0
+"ARP","Arb Corporation Limited","ARB.AX","ok",252
+"AST","Ausnet Services Stapled",NA,"no_asx_match",0
+"BDR","Beadell Resources Limited",NA,"no_asx_match",0
+"CDD","Cardno Limited",NA,"no_asx_match",0
+"CRZ","Carsales.com Limited",NA,"no_asx_match",0
+"CVO","Cover-more Group Limited",NA,"no_asx_match",0
+"CWN","Crown Resorts Limited",NA,"no_asx_match",0
+"DLS","Drillsearch Energy Limited",NA,"no_asx_match",0
+"DLX","Duluxgroup Limited",NA,"no_asx_match",0
+"EGP","Echo Entertainment Group Limited",NA,"no_asx_match",0
+"FDC","Federation Centres Stapled",NA,"no_asx_match",0
+"FXL","Flexigroup Limited",NA,"no_asx_match",0
+"GXL","Greencross Limited",NA,"no_asx_match",0
+"HGG","Henderson Group PLC Cdi 1:1",NA,"no_asx_match",0
+"IIN","Iinet Limited",NA,"no_asx_match",0
+"JHC","Japara Healthcare Limited",NA,"no_asx_match",0
+"MQA","Macquarie Atlas Roads Group Stapled",NA,"no_asx_match",0
+"MRM","Mermaid Marine Australia Limited",NA,"no_asx_match",0
+"MTU","M2 Group LTD",NA,"no_asx_match",0
+"NVT","Navitas Limited",NA,"no_asx_match",0
+"PGH","Pact Group Holdings LTD",NA,"no_asx_match",0
+"SAI","SAI Global Limited",NA,"no_asx_match",0
+"SGN","STW Communications Group Limited",NA,"no_asx_match",0
+"SIR","Sirius Resources NL",NA,"no_asx_match",0
+"SKE","Skilled Group Limited",NA,"no_asx_match",0
+"SRX","Sirtex Medical Limited",NA,"no_asx_match",0
+"SVW","Seven Group Holdings Limited",NA,"no_asx_match",0
+"SWM","Seven West Media Limited",NA,"no_asx_match",0
+"SXY","Senex Energy Limited",NA,"no_asx_match",0
+"SYD","Sydney Airport Forus",NA,"no_asx_match",0
+"TGR","Tassal Group Limited",NA,"no_asx_match",0
+"TME","Trade Me Group Limited NZ",NA,"no_asx_match",0
+"TPM","TPG Telecom Limited","TPG.AX","ok",252
+"TRS","The Reject Shop Limited",NA,"no_asx_match",0
+"VED","Veda Group Limited",NA,"no_asx_match",0
+"VRT","Virtus Health Limited",NA,"no_asx_match",0
+"ALU","Altium Ltd",NA,"no_asx_match",0
+"APT","Afterpay",NA,"no_asx_match",0
+"BIN","Bingo Industries Limited",NA,"no_asx_match",0
+"BKL","Blackmores Ltd",NA,"no_asx_match",0
+"BKW","Brickworks Ltd",NA,"no_asx_match",0
+"CGC","Costa Group Holdings",NA,"no_asx_match",0
+"CIM","Cimic Group Ltd",NA,"no_asx_match",0
+"COE","CooperEnergy Ltd",NA,"no_asx_match",0
+"DHG","Domain Holdings Australia",NA,"no_asx_match",0
+"EHE","Estia Health Ltd",NA,"no_asx_match",0
+"GOR","Gold Road Res Ltd",NA,"no_asx_match",0
+"JHG","Janus Henderson",NA,"no_asx_match",0
+"LNK","Link Admin HLDG",NA,"no_asx_match",0
+"NEA","Nearmap Ltd",NA,"no_asx_match",0
+"PDL","Pendal Group Limited",NA,"no_asx_match",0
+"SAR","Saracen Mineral",NA,"no_asx_match",0
+"SLR","Silver Lake Resource",NA,"no_asx_match",0
+"URW","Unibail-Rodamco-Westfield",NA,"no_asx_match",0
+"VOC","Vocus Group Ltd",NA,"no_asx_match",0
+"VUK","Virgin Money UK PLC",NA,"no_asx_match",0
+"VVR","Viva Energy REIT",NA,"no_asx_match",0
