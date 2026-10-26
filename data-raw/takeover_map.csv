@@ -35,15 +35,14 @@ ABP,0.26,2025-12-30,1.20,user,user-supplied current price stub (still listed; Ya
 GUD,5.28,2025-12-30,10.68,user,user-supplied current price stub (still listed; Yahoo gap)
 SEV,5.67,2009-10-22,6.25,user,user-supplied final price (Seven Network; merged into SWM 2011 but forced exit here so SWM history doesn't leak in)
 WAN,4.73,2010-05-25,6.539,user,user-supplied final price (West Australian Newspapers; merged into SWM 2011)
-APN,1.10,2023-11-30,1.20,user,user-supplied terminal price (APN renamed HT&E 2016; HT&E acquired by ARN Media at $1.20 cash 2023)
-WDC,10.33,2019-07-16,10.84,user,user-supplied terminal price (Westfield Group; post-demerger entity later acquired by Unibail-Rodamco)
+WDC,10.33,2014-06-17,10.56,computed,Westfield Group; last close before units traded ex the June 2014 restructure into 1 WFD + 1.246 SCG (Investing.com). Treated as an exit; the CGT demerger rollover is not modelled
 MCC,2.48,2011-12-22,16.010,user,user-supplied delisting price (Macarthur Coal; Peabody acquisition)
 CEY,1.77,2010-10-28,6.16,user,user-supplied delisting price (Centennial Coal; Banpu acquisition)
 SKI,1.08,2021-12-24,2.87,user,user-supplied delisting price (Spark Infrastructure; KKR/OTPP acquisition)
 UGL,7.36,2017-01-04,3.71,user,user-supplied delisting price (UGL Limited; CIMIC acquisition)
 AWC,1.19,2024-08-05,1.450,user,user-supplied delisting price (Alumina; Alcoa scrip implied AUD)
-CPA,0.93,2024-04-23,1.245,user,user-supplied delisting price (Commonwealth Property Office; DEXUS acquisition)
+CPA,0.93,2014-04-23,1.245,user,Commonwealth Property Office Fund; DEXUS/CPPIB takeover; compulsory acquisition completed Apr 2014 (year corrected from 2024)
 DUE,1.68,2017-05-18,3.020,user,user-supplied delisting price (DUET Group; CKI acquisition)
-AUN,0.82,2025-12-04,0.105,user,user-supplied delisting price (Austar United Communications)
-ALZ,0.22,2014-11-04,4.460,user,user-supplied delisting price (Australand; Frasers Centrepoint acquisition; entry price per source spreadsheet)
-AIO,0.44,2016-08-26,9.130,user,user-supplied delisting price (Asciano; Brookfield/Qube consortium; entry price per source spreadsheet)
+AUN,0.82,2012-04-27,1.52,computed,Austar United Communications; Foxtel scheme at $1.52 cash; delisted 27 Apr 2012 (earlier 2025 row was a later company reusing the code)
+ALZ,1.10,2014-11-04,4.460,computed,Australand; Frasers takeover. Entry is source $0.22 x5 to adjust for the May 2010 5-for-1 consolidation so it is on the same basis as the exit price
+AIO,1.32,2016-08-26,9.130,computed,Asciano; Brookfield/Qube scheme. Entry is source $0.44 x3 to adjust for the 1-for-3 consolidation (2926m to 975m shares) so it is on the same basis as the exit price
